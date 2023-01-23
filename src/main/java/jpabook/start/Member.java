@@ -16,7 +16,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
+//@Entity
 @Table(name = "MEMBER", uniqueConstraints = {@UniqueConstraint(
         name = "NAME_AGE_UNIQUE",
         columnNames = {"NAME", "AGE"}
