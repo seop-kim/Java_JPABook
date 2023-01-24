@@ -12,7 +12,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@Entity
+//@Entity
 public class Member {
     @Id
     @Column(name = "MEMBER_ID")
