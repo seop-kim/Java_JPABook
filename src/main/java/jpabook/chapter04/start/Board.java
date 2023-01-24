@@ -1,4 +1,4 @@
-package jpabook.start;
+package jpabook.chapter04.start;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
