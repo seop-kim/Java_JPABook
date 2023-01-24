@@ -13,7 +13,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@Entity
+//@Entity
 public class Team {
     @Id
     @Column(name = "TEAM_ID")
