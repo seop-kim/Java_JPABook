@@ -1,4 +1,4 @@
-package jpabook.start;
+package jpabook.chapter04.start;
 
 import java.util.List;
 import javax.persistence.EntityManager;
