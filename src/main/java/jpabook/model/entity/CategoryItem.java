@@ -27,4 +27,12 @@ public class CategoryItem {
     @ManyToOne
     @JoinColumn(name = "ITEM_ID")
     private Item item;
+
+    protected CategoryItem() {
+    }
+
+    public CategoryItem(Category category, Item item) {
+        this.category = category;
+        this.item = item;
+    }
 }
