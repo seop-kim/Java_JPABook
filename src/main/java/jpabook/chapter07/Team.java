@@ -1,4 +1,4 @@
-package jpabook.chapter06;
+package jpabook.chapter07;
 
 import java.util.ArrayList;
 import java.util.List;

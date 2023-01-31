@@ -1,10 +1,8 @@
-package jpabook.chapter06;
+package jpabook.chapter07;
 
-import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
