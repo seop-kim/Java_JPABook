@@ -1,4 +1,4 @@
-package jpabook.model.entity;
+package jpabook.chapter06;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,23 +13,21 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "ORDER_ITEM")
-public class OrderItem {
-
+@Table(name = "ORDERS")
+public class Order {
     @Id
     @GeneratedValue
-    @Column(name = "ORDER_ITEM_ID")
+    @Column(name = "ORDER_ID")
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "ITEM_ID")
-    private Item item;
-
+    @JoinColumn(name = "MEMBER_ID")
+    private Member member;
 
     @ManyToOne
-    @JoinColumn(name = "ORDER_ID")
-    private Order order;
+    @JoinColumn(name = "PRODUCT_ID")
+    private Product product;
 
-    private int orderPrice;
-    private int count;
+    private int orderAmount;
 }
+
