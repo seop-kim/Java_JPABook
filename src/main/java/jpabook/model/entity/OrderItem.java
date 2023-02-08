@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import jpabook.model.entity.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 
