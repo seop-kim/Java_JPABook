@@ -34,8 +34,8 @@ class Chapter07MainTest {
         manager.persist(board);
 
         BoardDetail boardDetail = new BoardDetail();
-        boardDetail.setContent("내용");
-        boardDetail.setBoard(board);
+//        boardDetail.setContent("내용");
+//        boardDetail.setBoard(board);
         manager.persist(boardDetail);
 
         transaction.commit();
@@ -45,8 +45,5 @@ class Chapter07MainTest {
 
         BoardDetail findBoardDetail = manager.find(BoardDetail.class, 1L);
         System.out.println("findBoardDetail = " + findBoardDetail);
-
-
     }
-
 }

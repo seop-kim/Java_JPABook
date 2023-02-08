@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.SecondaryTable;
+import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,6 +16,10 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
+@Table(name = "Board")
+@SecondaryTable(
+        name = "BOARD_DETAIL",
+        pkJoinColumns = @PrimaryKeyJoinColumn(name = "BOARD_DETAIL_ID"))
 public class Board {
     @Id
     @GeneratedValue
@@ -21,6 +28,9 @@ public class Board {
 
     private String title;
 
-    @OneToOne(mappedBy = "board")
-    private BoardDetail boardDetail;
+    @Column(table = "BOARD_DETAIL")
+    private String content;
+
+//    @OneToOne(mappedBy = "board")
+//    private BoardDetail boardDetail;
 }
