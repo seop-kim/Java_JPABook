@@ -1,4 +1,4 @@
-package jpabook.chapter07;
+package jpabook.chapter08.item;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @Entity
 @DiscriminatorValue("A")
-public class Album extends Item{
+public class Album extends Item {
     private String artist;
 }

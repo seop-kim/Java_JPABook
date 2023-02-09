@@ -1,4 +1,4 @@
-package jpabook.chapter07;
+package jpabook.chapter08;
 
 import lombok.Getter;
 import lombok.Setter;
