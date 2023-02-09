@@ -1,8 +1,8 @@
-package jpabook.chapter07;
+package jpabook.chapter08.item;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.PrimaryKeyJoinColumn;
+import jpabook.chapter08.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @DiscriminatorValue("B")
-public class Book extends Item{
+public class Book extends Item {
     private String author;
     private String isbn;
 }

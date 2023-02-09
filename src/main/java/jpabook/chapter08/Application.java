@@ -1,11 +1,11 @@
-package jpabook.chapter07;
+package jpabook.chapter08;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class Chapter07Main {
+public class Application {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
         EntityManager em = emf.createEntityManager();

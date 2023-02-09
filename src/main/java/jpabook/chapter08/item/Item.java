@@ -1,4 +1,4 @@
-package jpabook.chapter07;
+package jpabook.chapter08.item;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
