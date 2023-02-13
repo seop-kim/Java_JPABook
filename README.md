@@ -321,7 +321,7 @@ public class Member {
 
 ## 지연로딩 활용
 
-![img1](../../../../var/folders/8z/7dpb98794zg0074h9wt7lgnm0000gn/T/TemporaryItems/NSIRD_screencaptureui_JJ7RAZ/스크린샷 2023-02-10 오전 11.12.03.png)
+![img1](docs/sources/ch08_img_1.png)
 
 - 위와 같은 모델이 있다고 해보자
     - 회원은 팀 하나에만 속할 수 있다.
