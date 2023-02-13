@@ -23,7 +23,7 @@ public class GrandChild {
     private Long id;
     private String name;
 
-    @ManyToOne(fetch = LAZY)
-    @JoinColumn(name = "CHILD_ID")
-    private Child child;
+//    @ManyToOne(fetch = LAZY)
+//    @JoinColumn(name = "CHILD_ID")
+//    private Child child;
 }

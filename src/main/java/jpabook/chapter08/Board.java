@@ -16,9 +16,6 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "Board")
-@SecondaryTable(
-        name = "BOARD_DETAIL",
-        pkJoinColumns = @PrimaryKeyJoinColumn(name = "BOARD_DETAIL_ID"))
 public class Board {
     @Id
     @GeneratedValue
@@ -27,7 +24,7 @@ public class Board {
 
     private String title;
 
-    @Column(table = "BOARD_DETAIL")
+//    @Column(table = "BOARD_DETAIL")
     private String content;
 
 //    @OneToOne(mappedBy = "board")
