@@ -1,15 +1,18 @@
-package jpabook.chapter08;
+package jpabook.chapter09;
 
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class GrandChildId implements Serializable {
-    private String childId; // @MapsId("childId") 매핑
+public class ChildId implements Serializable {
+    private String parentId; // Child.parent와 매핑
 
-    @Column(name = "GRANDCHILD_ID")
+    @Column(name = "CHILD_ID")
     private String id;
+
+    public ChildId() {
+    }
 
     // equals, hashCode
     @Override
@@ -22,4 +25,3 @@ public class GrandChildId implements Serializable {
         return super.hashCode();
     }
 }
-
