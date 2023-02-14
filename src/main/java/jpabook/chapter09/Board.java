@@ -1,11 +1,9 @@
-package jpabook.chapter08;
+package jpabook.chapter09;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.SecondaryTable;
 import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;

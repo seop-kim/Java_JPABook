@@ -1,4 +1,4 @@
-package jpabook.chapter08;
+package jpabook.chapter09;
 
 import java.io.Serializable;
 import lombok.Getter;

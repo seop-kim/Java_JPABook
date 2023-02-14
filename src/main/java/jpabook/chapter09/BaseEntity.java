@@ -1,4 +1,4 @@
-package jpabook.chapter08;
+package jpabook.chapter09;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
