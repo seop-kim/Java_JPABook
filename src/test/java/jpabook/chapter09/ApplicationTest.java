@@ -23,15 +23,15 @@ class ApplicationTest {
     }
 
     private void createMemberAndTeamTest() {
-        Member member = new Member();
-        member.setId("member1");
-        member.setUsername("member1");
-        Team team = new Team("team1", "team1_name");
-        manager.persist(team);
-        member.setTeam(team);
-        manager.persist(member);
-        transaction.commit();
-        manager.clear();
+//        Member member = new Member();
+//        member.setId("member1");
+//        member.setUsername("member1");
+//        Team team = new Team("team1", "team1_name");
+//        manager.persist(team);
+//        member.setTeam(team);
+//        manager.persist(member);
+//        transaction.commit();
+//        manager.clear();
     }
 
     @AfterEach
@@ -64,8 +64,8 @@ class ApplicationTest {
 
     @Test
     void print() {
-        Member member = manager.find(Member.class, "member1");
-        System.out.println("member = " + member);
+//        Member member = manager.find(Member.class, "member1");
+//        System.out.println("member = " + member);
     }
 
     @Test

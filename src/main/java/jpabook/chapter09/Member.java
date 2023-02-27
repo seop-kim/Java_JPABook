@@ -1,9 +1,13 @@
 package jpabook.chapter09;
 
 import java.util.List;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -18,17 +22,22 @@ import lombok.ToString;
 @Entity
 public class Member {
     @Id
-    @Column(name = "MEMBER_ID")
-    private String id;
-    private String username;
+    @GeneratedValue
+    private Long id;
+    private String name;
+    private int age;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "TEAM_ID",
-            nullable = false)
-    private Team team;
+    @Embedded
+    private Address homeAddress;
 
-    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
-    private List<Order> orders;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "city", column = @Column(name = "COMPANY_CIYT")),
+            @AttributeOverride(name = "street", column = @Column(name = "COMPANY_STREET")),
+            @AttributeOverride(name = "state", column = @Column(name = "COMPANY_STATE")),
+            @AttributeOverride(name = "zipcode.zip", column = @Column(name = "COMPANY_ZIP")),
+            @AttributeOverride(name = "zipcode.plusFour", column = @Column(name = "COMPANY_PLUS_FOUR"))})
+    private Address companyAddress;
 }
 
 //    public void setTeam(Team team) {
