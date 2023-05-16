@@ -16,9 +16,7 @@ public class ParentId implements Serializable {
     @Column(name = "PARENT_ID2")
     private String id2;
 
-    public ParentId() {
-
-    }
+    public ParentId() {}
 
     public ParentId(String id1, String id2) {
         this.id1 = id1;
